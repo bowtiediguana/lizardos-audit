@@ -32,7 +32,7 @@ Verify the hash:
 
 Extract the ISO
 ```bash
-command -v xorriso >/dev/null 2>&1 || sudo dnf install xorriso -y # install a package to extract ISO's from the Fedora or Debian repository
+command -v xorriso >/dev/null 2>&1 || sudo dnf install xorriso -y # install a package to extract ISO's from the Fedora repository
 mkdir lizardos
 xorriso -osirrox on -indev LizardOS-Beta-1.iso  -- -extract / lizardos/
 ```

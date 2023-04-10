@@ -363,7 +363,8 @@ mkdir -p artwork/${file}
 rpm2cpio lizardos/Packages/${file}.rpm | (cd artwork/${file} && cpio -idmv)
 done
 ```
-Inspect all files under the `artwork` directory to confirm they just contain images.
+Inspect all files under the `artwork` directory. They are images and simple text makefiles.
+**TODO:** add detailed instructions for extracting the artwork packages from the Qubes ISO with cpio and running a recursive diff.
 
 ```
 Only in lizardos/repodata: *

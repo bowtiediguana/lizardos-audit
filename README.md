@@ -262,13 +262,13 @@ gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-32-primary
 [qubes-dom0-current-testing]
 name = Qubes Dom0 Repository (updates-testing)
 #baseurl = https://yum.qubes-os.org/r4.1/current-testing/dom0/fc32
-#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r$4.1/current-testing/dom0/fc32
+#baseurl = http://yum.qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/r4.1/current-testing/dom0/fc32
 metalink = https://yum.qubes-os.org/r4.1/current-testing/dom0/fc32/repodata/repomd.xml.metalink
 skip_if_unavailable=False
 enabled = 0
 metadata_expire = 6h
 gpgcheck = 1
-gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-$releasever-primary
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-qubes-r4.1-primary
 
 [qubes-templates-itl]
 name = Qubes Templates repository
@@ -279,7 +279,7 @@ enabled = 1
 fastestmirror = 1
 metadata_expire = 7d
 gpgcheck = 1
-gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-$releasever-primary
+gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-r4.1-primary
 
 [qubes-templates-itl-testing]
 name = Qubes Templates repository
@@ -289,7 +289,7 @@ metalink = https://yum.qubes-os.org/r4.1/templates-itl-testing/repodata/repomd.x
 enabled = 0
 fastestmirror = 1
 gpgcheck = 1
-gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-$releasever-primary
+gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-r4.1-primary
 
 [qubes-templates-community]
 name = Qubes Community Templates repository
@@ -300,7 +300,7 @@ enabled = 0
 fastestmirror = 1
 metadata_expire = 7d
 gpgcheck = 1
-gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-$releasever-templates-community
+gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-r4.1-templates-community
 
 [qubes-templates-community-testing]
 name = Qubes Community Templates repository
@@ -310,7 +310,7 @@ metalink = https://yum.qubes-os.org/r4.1/templates-community-testing/repodata/re
 enabled = 0
 fastestmirror = 1
 gpgcheck = 1
-gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-$releasever-templates-community
+gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-r4.1-templates-community
 EOF
 
 sudo mv fedora32.repo fedora-updates32.repo qubes-dom0.repo /etc/yum.repos.d/

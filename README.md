@@ -27,7 +27,7 @@ If you are using a remote/cloud server, you may need to `scp` the file from your
 Verify the hash:
 
 ```bash
-[ "$(sha256sum LizardOS-Beta-1.iso | awk '{print $1}')" == "58cad5c0670066912157164441c294bd05542ed3372a02b254e6d2e7c9e6edc4" ] && echo "Hashes match" || echo "Hashes do not match"
+[ "$(sha256sum LizardOS-Beta-1.iso | awk '{print $1}')" == "702d67dc3eb370785f7853f2d5daac1abb0ef6291c8e71f9ab36eec1b609fd60" ] && echo "Hashes match" || echo "Hashes do not match"
 ```
 
 Extract the ISO

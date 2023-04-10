@@ -22,7 +22,7 @@ The first beta release of LizardOS is called `LizardOS-Beta-1.iso` and has sha25
 
 On a trusted Fedora Linux computer, download this ISO and place it in a new directory called `audit`.
 
-If you are using a cloud server, you may need to `scp` the file from your local machine where you downloaded it, to the audit directory on the Fedora cloud server.
+If you are using a remote/cloud server, you may need to `scp` the file from your local machine (where you downloaded it from the store) to the audit directory on the Fedora cloud server.
 
 Verify the hash:
 

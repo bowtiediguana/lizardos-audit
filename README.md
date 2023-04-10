@@ -18,7 +18,7 @@ Here are the steps:
 
 ## Extract LizardOS
 
-The first beta release of LizardOS is called `LizardOS-Beta-1.iso` and has sha256 hash `58cad5c0670066912157164441c294bd05542ed3372a02b254e6d2e7c9e6edc4`.
+The first beta release of LizardOS is called `LizardOS-Beta-1.iso` and has sha256 hash `702d67dc3eb370785f7853f2d5daac1abb0ef6291c8e71f9ab36eec1b609fd60`.
 
 On a trusted Fedora Linux computer, download this ISO and place it in a new directory called `audit`.
 

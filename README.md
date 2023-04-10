@@ -331,6 +331,13 @@ wget -nc https://ftp.qubes-os.org/repo/yum/r4.1/current-testing/dom0/fc32/rpm/ke
 
 mkdir -p trusted-rpms
 dnf --disablerepo="*" --enablerepo="fedora*32" --enablerepo="qubes*" download --destdir=trusted-rpms $(cat rpm_names.txt)
+
+
+#Clean up the repos we installed
+for repo in fedora32.repo fedora-updates32.repo qubes-dom0.repo
+do
+sudo rm /etc/yum.repos.d/${repo}
+done
 ```
 
 Say yes if prompted to import a Qubes signing key.

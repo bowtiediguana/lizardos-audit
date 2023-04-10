@@ -313,7 +313,7 @@ gpgcheck = 1
 gpgkey = file:///etc/qubes/repo-templates/keys/RPM-GPG-KEY-qubes-$releasever-templates-community
 EOF
 
-sudo mv fedora*.repo qubes*repo /etc/yum.repos.d/
+sudo mv fedora32.repo fedora-updates32.repo qubes-dom0.repo /etc/yum.repos.d/
 sudo dnf install dnf-plugins-core
 
 #Remove some modified RPMs from the comparison, we will deal with these separately
@@ -334,10 +334,9 @@ dnf --disablerepo="*" --enablerepo="fedora*32" --enablerepo="qubes*" download --
 
 
 #Clean up the repos we installed
-for repo in fedora32.repo fedora-updates32.repo qubes-dom0.repo
-do
-sudo rm /etc/yum.repos.d/${repo}
-done
+pushd /etc/yum.repos.d/
+sudo rm fedora32.repo fedora-updates32.repo qubes-dom0.repo
+popd
 ```
 
 Say yes if prompted to import a Qubes signing key.

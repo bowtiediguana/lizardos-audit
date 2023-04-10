@@ -134,7 +134,7 @@ command -v aria2c >/dev/null 2>&1 || sudo dnf install aria2 -y # install aria do
 aria2c -x 12 -s 4 https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.2-x86_64.iso
 ```
 
-Check the hash (cross reference the digests here: https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.2-x86_64.iso.DIGESTS)
+Check the hash matches your download. You can cross reference the digests [at the Qubes domain](https://mirrors.edge.kernel.org/qubes/iso/Qubes-R4.1.2-x86_64.iso.DIGESTS)
 
 ```bash 
 [ "$(sha256sum Qubes-R4.1.2-x86_64.iso | awk '{print $1}')" == "4240897c83882329c960863da18125badc9e4a4a1071340240577c70aef5dcd8" ] && echo "Hashes match" || echo "Hashes do not match"
